@@ -1,0 +1,5 @@
+com/guestbook/application/GuestBookApplication.class
+com/guestbook/application/controller/GuestBookController.class
+com/guestbook/application/repository/GuestBookRepository.class
+com/guestbook/application/service/GuestBookService.class
+com/guestbook/application/entity/GuestBookEntity.class
