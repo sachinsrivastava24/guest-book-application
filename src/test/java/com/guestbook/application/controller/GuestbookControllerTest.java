@@ -35,13 +35,6 @@ public class GuestbookControllerTest {
     }
 
     @Test
-    void testGetEndPointsForGuestEntryByName() throws Exception {
-        GuestBookEntity entry = repository.findAll().iterator().next();
-        mvc.perform(get("/guestEntryByName/{name}", entry.getName()))
-                .andExpect(status().isOk());
-    }
-
-    @Test
     void testPostEndPointsForAddGuestBookEntry() throws Exception {
         GuestBookEntity entry = repository.findAll().iterator().next();
         mvc.perform(MockMvcRequestBuilders
