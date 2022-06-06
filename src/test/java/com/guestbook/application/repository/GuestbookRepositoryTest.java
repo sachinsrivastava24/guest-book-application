@@ -28,10 +28,4 @@ public class GuestbookRepositoryTest{
 		GuestBookEntity entry = repository.save(new GuestBookEntity(1,"Sachin", "I am a guest"));
 		assertThat(repository.findAll()).contains(entry);
 	}
-
-	@Test
-	void findsGuestbookEntryByName() {
-		GuestBookEntity entry = repository.save(new GuestBookEntity(3,"Srivastava", "I am also a guest"));
-		assertThat(repository.findByName("Srivastava")).doesNotHaveToString("Sachin");
-	}
 }
