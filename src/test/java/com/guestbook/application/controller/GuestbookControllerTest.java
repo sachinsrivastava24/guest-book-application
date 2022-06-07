@@ -14,8 +14,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 /**
  * Integration tests for {@link GuestBookController}.
- *
- * @author Oliver Drotbohm
  */
 @SpringBootTest
 @AutoConfigureMockMvc

@@ -12,9 +12,6 @@ import javax.transaction.Transactional;
  * <p>
  * Bootstraps the application using the {@link com.guestbook.application.GuestBookApplication} configuration class. Enables transaction rollbacks after
  * test methods using the {@link Transactional} annotation.
- *
- * @author Oliver Drotbohm
- * @author Paul Henke
  */
 @SpringBootTest
 @Transactional
