@@ -5,6 +5,7 @@ import com.guestbook.application.repository.GuestBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -43,7 +44,7 @@ public class GuestBookService {
      * @param name
      * @return
      */
-    public GuestBookEntity getGuestBookEntryByName(String name) {
+    public List<GuestBookEntity> getGuestBookEntryByName(String name) {
         return guestBookRepository.findByName(name);
     }
 

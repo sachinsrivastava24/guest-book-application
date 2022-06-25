@@ -34,10 +34,9 @@ public class GuestBookController {
     }
 
     @GetMapping("/guestEntryByName/{name}")
-    public GuestBookEntity findGuestByName(@PathVariable String name) {
+    public List<GuestBookEntity> findGuestByName(@PathVariable String name) {
         return guestBookService.getGuestBookEntryByName(name);
     }
-
     @PutMapping("/updateGuestBookEntry")
     public GuestBookEntity updateGuestEntry(@RequestBody GuestBookEntity guestBookEntity) {
         return guestBookService.updateGuestBookEntry(guestBookEntity);
